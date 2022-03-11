@@ -1,20 +1,25 @@
 #include <stdio.h>
 /**
- * main - entry point
- * Return:0
+ *main - Writing a program that prints out all possible combinations of single
+ *digit numbers separated by a space and comma.
+ *
+ *Return: The value zero is returned.
  */
+
 int main(void)
 {
-        int i;
-        for (i = 10; i < 20; i++)
-        {
-                putchar((i % 10) + '0');
-                if (i != 19)
-          	{
-	                putchar(',');
-	                putchar(' ');                                         
-            	}
-        }
-        putchar('\n'); 
-        return (0);
+	int i, a = '0';
+
+	for (i = 0; i < 10; i++)
+	{
+		putchar(a);
+		a++;
+		if (i != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }
