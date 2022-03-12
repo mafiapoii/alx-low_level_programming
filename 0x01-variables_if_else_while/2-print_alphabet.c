@@ -1,14 +1,16 @@
 #include <stdio.h>
 /**
- * main - entry point
- * Return:0
+ *main - printing the alphabet from a through z
+ *Return: The returned value is 0.
  */
-int main(void)
-{
-  char a;
 
-  for (a = 'a'; a <= 'z' ; a++)
-    putchar(a);
-  putchar('\n');
-  return (0);
+int main(void)
+
+{
+	char i;
+
+	for (i = 'a'; i <= 'z'; i++)
+		putchar(i);
+	putchar('\n');
+	return (0);
 }
